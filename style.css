@@ -30,7 +30,7 @@ button {
 }
 
 button:hover {
-  background-color: gray;
+  background-color: rgb(133, 129, 129);
   color: black;
   cursor: pointer;
   transition: 1s;
