@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Presensi Guru Digital</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="login-container">
+        <h2>Masuk</h2>
+        <input
+          type="text"
+          id="username"
+          placeholder="Masukkan Nama Anda "
+          required
+        />
+        <button onclick="login()">Masuk</button>
+      </div>
+
+      <div id="dashboard" style="display: none">
+        <h2>Selamat Datang di Dashboard Presensi</h2>
+        <div>
+          <button onclick="logout()">Keluar</button>
+          <button onclick="showAddAttendanceForm()">Tambah Presensi</button>
+        </div>
+
+        <div id="attendance-form" style="display: none">
+          <h3>Tambahkan Presensi</h3>
+          <input
+            type="text"
+            id="teacher-name"
+            placeholder="Nama Guru"
+            required
+          />
+          <button onclick="addAttendance()">Kirim</button>
+        </div>
+
+        <h3>Data Presensi</h3>
+        <table id="attendance-table">
+          <tr>
+            <th>No</th>
+            <th>Nama Guru</th>
+            <th>Tanggal</th>
+            <th>Waktu</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
