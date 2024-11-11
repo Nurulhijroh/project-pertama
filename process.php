@@ -2,6 +2,7 @@
 session_start();
 $response = ["status" => "error", "message" => "permintaan tidak valid"];
 
+
 if (isset($_POST['action'])){
     $action = $_POST['action'];
 
@@ -22,6 +23,7 @@ if (isset($_POST['action'])){
         $time = date("H:i:s");
 }
     
+
 elseif ($action == "getAttendance" && isset($_SESSION['username'])) { 
     $records = [];
 if (file_exists("attendance.txt")) {
@@ -35,6 +37,5 @@ if (file_exists("attendance.txt")) {
         $response = ["status" => "success", "records" => $records]; 
         } } header('Content-Type: application/json'); 
         echo json_encode($response); 
-        
         ?>
 
