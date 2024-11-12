@@ -77,4 +77,9 @@ function loadAttendanceRecords() {
     row.insertCell(2).textContent = record.date;
     row.insertCell(3).textContent = record.time;
   });
+  window.addEventListener("scroll", function () {
+    document.querySelector(".container").style.backgroundPositionY = `${
+      window.scrollY / 2
+    }px`;
+  });
 }
