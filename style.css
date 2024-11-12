@@ -1,11 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
+  padding-bottom: 60%;
+  width: 100%;
   font-family: "Times New Roman", Times, serif;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  height: 100vh;
-  padding-top: 90px;
   background-image: url("log\ logo.jpg");
   background-size: cover;
   background-position: cover;
@@ -15,8 +18,8 @@ body {
 #login-container,
 #dashboard {
   background: #9ac3df;
-  margin-top: 80px;
-  padding: 40px;
+  margin-top: 75%;
+  padding: 50px;
   width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
