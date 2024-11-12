@@ -6,7 +6,7 @@ body {
   height: 100vh;
   background-image: url("log\ logo.jpg");
   background-size: cover;
-  background-position: cover;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
