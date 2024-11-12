@@ -3,16 +3,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
   height: 100vh;
+  padding-top: 90px;
   background-image: url("log\ logo.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: cover;
   background-repeat: no-repeat;
 }
 
 #login-container,
 #dashboard {
   background: #9ac3df;
+  margin-top: 80px;
   padding: 40px;
   width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
