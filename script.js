@@ -30,6 +30,7 @@ function showAddAttendanceForm() {
 
 function addAttendance() {
   const teacherName = document.getElementById("teacher-name").value;
+  alert("Absen Telah ditambahkan");
   const date = new Date();
 
   if (teacherName) {
